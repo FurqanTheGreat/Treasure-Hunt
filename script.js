@@ -1,3 +1,5 @@
+// Heading animation
+$("h1").fadeOut(3000).fadeIn(2000).fadeTo(2000, 0.5);
 // Generate a random number
 function getRandomNumber(size) {
     return Math.floor(Math.random() * size);
