@@ -1,5 +1,3 @@
-// Heading animation
-$("h1").fadeOut(3000).fadeIn(2000).fadeTo(2000, 0.5);
 // Generate a random number
 function getRandomNumber(size) {
     return Math.floor(Math.random() * size);
@@ -8,8 +6,14 @@ function getRandomNumber(size) {
 var clicks = 0;
 // Calculate the distance between click and treasure
 function getDistance(event, target) {
-    var diffX = event.offsetX - target.x;
-    var diffY = event.offsetY - target.y;
+    var map = $('#map');
+    var mapWidth = map.width();
+    var mapHeight = map.height();
+    var targetX = target.x / 600 * mapWidth;
+    var targetY = target.y / 600 * mapHeight;
+
+    var diffX = event.offsetX - targetX;
+    var diffY = event.offsetY - targetY;
     return Math.sqrt((diffX * diffX) + (diffY * diffY));
 }
 // Give player a distance hint
