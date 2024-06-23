@@ -1,0 +1,14 @@
+1. Create a web page with an image (the treasure map) and a
+place to display messages to the player.
+2. Pick a random spot on the map picture to hide the treasure.
+Find the Buried Treasure!
+3. Create a click handler. Each time the player clicks the map,
+the click handler will do the following:
+a. Add 1 to a click counter.
+b. Calculate how far the click location is from the treasure
+location.
+c. Display a message on the web page to tell the player
+whether they’re hot or cold.
+d. Congratulate the player if they click on the treasure or
+very close to it, and say how many clicks it took to find the
+treasure.
